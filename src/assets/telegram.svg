@@ -1,0 +1,31 @@
+var _defs, _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgTelegram(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "telegram",
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 17.617,
+    height: 14.567,
+    viewBox: "0 0 17.617 14.567",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("style", null, "\n      .cls-1 {\n        fill: #f5f5f7;\n      }\n    "))), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    id: "Path_313",
+    "data-name": "Path 313",
+    className: "cls-1",
+    d: "M87.8,152.4s7.791-3.2,10.494-4.324c1.036-.45,4.549-1.892,4.549-1.892s1.621-.63,1.486.9c-.045.631-.405,2.837-.766,5.224-.54,3.378-1.126,7.071-1.126,7.071s-.09,1.036-.856,1.216a3.7,3.7,0,0,1-2.252-.811c-.18-.135-3.378-2.162-4.549-3.153a.853.853,0,0,1,.045-1.441c1.621-1.486,3.558-3.333,4.729-4.5.54-.54,1.081-1.8-1.171-.27-3.2,2.207-6.35,4.279-6.35,4.279a2.646,2.646,0,0,1-2.072.045c-1.351-.405-2.927-.946-2.927-.946S85.953,153.122,87.8,152.4Z",
+    transform: "translate(-86.72 -146.058)"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgTelegram);
+export default __webpack_public_path__ + "static/media/telegram.dd5673f321b01a52fd26e8de265136fb.svg";
+export { ForwardRef as ReactComponent };

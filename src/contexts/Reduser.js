@@ -1,0 +1,53 @@
+export const menuReducer = (state, action)=>{
+    if (action.type === 'OPEN_MENU'){
+      return {...state, isMenuOpen:true}
+    }
+  
+    if (action.type === 'CLOSE_MENU'){
+     return {...state, isMenuOpen:false}
+    }
+  
+    if (action.type === 'SET_MOBILE_TRUE'){
+     return {...state, isMobile: true}
+    }
+    if (action.type === 'CHANGETITLE'){
+      return {...state, pageTitle: action.payload}
+     }
+    if (action.type === 'SET_MOBILE_FALSE'){
+     return {...state, isMobile: false}
+    }
+    if(action.type === 'LOADING_FALSE'){
+      return {...state, loading:false}
+    }
+    if(action.type === 'VID_FALSE'){
+      return {...state, vid:false}
+    }
+    if(action.type === 'INIT_FALSE'){
+      return {...state, initial:false}
+    }
+    if (action.type === 'SET_TRANSITION'){
+     return {...state, transition: !state.transition}
+    }
+    if (action.type === 'CHANGEHOVER'){
+      return {...state, pointer: action.payload}
+     }
+    // 
+    if(action.type === "SCROLLED"){
+      return {...state, ScrollYValue: action.payload}
+    }
+    if(action.type === "CHANGECONBTN"){
+      return {...state, contact: action.payload}
+    }
+    if(action.type === "RESET_LOCO"){
+      console.log(state.resetLoco, "loco")
+      return {...state, resetLoco: !state.resetLoco}
+    }
+    if(action.type === "SET_ANI"){
+      return {...state, aniClick: !state.aniClick}
+    }
+    if(action.type === "CHANGEFAQ"){
+      return {...state, faqp: action.payload}
+    }
+    return state;
+  }
+  

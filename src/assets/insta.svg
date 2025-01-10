@@ -1,0 +1,41 @@
+var _defs, _path, _ellipse;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgInsta(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "Group_677",
+    "data-name": "Group 677",
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 15.891,
+    height: 15.891,
+    viewBox: "0 0 15.891 15.891",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("style", null, "\n      .cls-1 {\n        fill: #f5f5f7;\n      }\n    "))), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    id: "Path_197",
+    "data-name": "Path 197",
+    className: "cls-1",
+    d: "M6147.434-642.6H6136.2a2.33,2.33,0,0,0-2.327,2.328v11.235a2.329,2.329,0,0,0,2.327,2.327h11.236a2.328,2.328,0,0,0,2.328-2.327v-11.235A2.329,2.329,0,0,0,6147.434-642.6Zm-5.618,12.373a4.425,4.425,0,0,1-4.426-4.427,4.425,4.425,0,0,1,4.426-4.427,4.427,4.427,0,0,1,4.427,4.427A4.427,4.427,0,0,1,6141.816-630.228Zm5.12-8.5a1.017,1.017,0,0,1-1.017-1.018,1.017,1.017,0,0,1,1.017-1.018,1.017,1.017,0,0,1,1.018,1.018A1.017,1.017,0,0,1,6146.937-638.728Z",
+    transform: "translate(-6133.871 642.601)"
+  })), _ellipse || (_ellipse = /*#__PURE__*/React.createElement("ellipse", {
+    id: "Ellipse_40",
+    "data-name": "Ellipse 40",
+    className: "cls-1",
+    cx: 2.75,
+    cy: 2.75,
+    rx: 2.75,
+    ry: 2.75,
+    transform: "translate(5.194 5.229)"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgInsta);
+export default __webpack_public_path__ + "static/media/insta.fec808407d568f75b73467bd4d055af9.svg";
+export { ForwardRef as ReactComponent };
